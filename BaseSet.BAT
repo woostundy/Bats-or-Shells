@@ -73,7 +73,7 @@ goto start
 
 :D
 rem 禁用administrator，添加新用户
-wmic USERACCOUNT where name="Administrator" set FullName="testaccount" 
+wmic USERACCOUNT where name="Administrator" call ReName="TestAccount" 
 echo Success!
 goto start
 
